@@ -1,0 +1,11 @@
+$('.form-progress')
+			.find('.form-progress-indicator.active')
+			.next('.form-progress-indicator')
+			.addClass('active');
+
+
+
+            jquery code for adding active class at the end of progrees.div
+
+
+            var value=66l;
