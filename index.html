@@ -110,9 +110,16 @@
                       </div >
 
                    
-                    <div class="smmry-font grey-color"> <span>In Stock </span> </div>
+                     <div class="smmry-font grey-color"> <span>In Stock </span> </div>
 
-                    <div class="">  <span><button class=" btn qnty-btn " >Qty: 1</button>   </span> <span class="smmry-font  delete-btn"> Delete </span>
+                    <div class="">  <span><button class=" btn qnty-btn " >
+                      <div class="smmry-font grey-color"> <span>Qty </span> </div>
+                      <select name="qty" id="qty">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                     </select></button>   </span> <span class="smmry-font  delete-btn"> Delete </span>
                     </div>                                  
               </div> <!-- .container-->
 
@@ -129,10 +136,20 @@
                       </div >
 
                    
-                    <div class="smmry-font grey-color"> <span>In Stock </span> </div>
+                  <div class="smmry-font grey-color"> <span>In Stock </span> </div>
 
-                    <div class="">  <span><button class=" btn qnty-btn " >Qty: 1</button>   </span> <span class="smmry-font  delete-btn"> Delete </span>
-                    </div>               
+
+                    <div class="">  <span><button class=" btn qnty-btn " >
+                      <div class="smmry-font grey-color"> <span>Qty </span> </div>
+                      <select name="qty" id="qty">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select></button></span> <span class="smmry-font  delete-btn"> Delete </span>
+                    <div class="discount­code­field"> 
+                  </div> 
+                </div>               
         </div> <!-- .container-->
 
  <!--======================================= .third-product=======================================-->
@@ -183,7 +200,10 @@
                 <div class=" border-total">
                   <span class="font-weight-bold smmry-font font-size">Total</span>
                   <span class="float-right smmry-font font-size"> ₹00.0</span>
-                </div>
+                 </div>
+                        <input autocomplete="off" type="text" name="discount" placeholder="Enter promocode here" /> 
+                        <input type="submit" value="Submit">
+                
               
 
                 <button type="submit" class="input-group-text btn">Guest Checkout</button>
