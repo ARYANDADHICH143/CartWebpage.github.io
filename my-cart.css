@@ -1,9 +1,11 @@
 :root{
     --font-family:gt-eesti, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --blue-color: #00aff5;
+    --blue-color:  #00aff5 ;
     --yello-color: #ffd700;
-    --white-color:#e6e6e6;
+    --whitestGrey-color:#e6e6e6;
     --black-color: #314150;
+    --white-color:#fff;
+    --grey-color: #dee2;    /* greycolor used in font and button */
 }
 
 
@@ -57,7 +59,7 @@ font-weight: 500;
 display: inline-block;
 font-size: 22px;
 line-height: 22px;
-color: #00aff5/* #00a4d0 */;
+color: var(--blue-color)/* #00a4d0 */;
 padding: 15px;
 z-index: -1;
 }
@@ -66,7 +68,7 @@ text-decoration:none !important;
 
 }
 .menu a:hover {
-        border-bottom:2px solid #00aff5;
+        border-bottom:2px solid var(--blue-color);
         /* transition-duration: 1s; */
 }
 /* .active{
@@ -231,6 +233,7 @@ progress::-webkit-progress-value {
 }
 .product-price-box{
               background-color: var(--blue-color)/* #00a4d0 */;
+              color:var(--white-color)!important;
               font-size: 16px;
               font-weight: 600;
               width: 95px;
@@ -261,13 +264,18 @@ progress::-webkit-progress-value {
               color:#dc3545;
               transition: 0.5s;
 }
+
 .qnty-btn{
             background-color: #dee2e6 !important;  
-            padding: 3px 15px;
+            padding: 5px!important;
             font-size: 16px!important;
 
 }
+.qnty-select{
+  border: 0px;
+  background-color: #dee2;
 
+}
 
 .second-product{
       top: 300px;
@@ -299,7 +307,7 @@ progress::-webkit-progress-value {
           font-size:18px;
 
 }
-.input-group-text {
+.btn-checkout {
             width: 300px;
             background-color: var(--blue-color)!important;
             border: 0!important;
@@ -311,6 +319,20 @@ progress::-webkit-progress-value {
             margin-top: 15px;
 
 }
+.checkout-btn{
+
+}
+.btn-color{
+   background-color: var(--blue-color)!important;
+   color:var(--white-color)!important;
+}
+.promocode-div{
+    width: 96% !important;
+    margin-left: 10px!important;
+}
+.promocode-input{
+  padding: 0px 6px !important;
+}
 
 /*  .font-weight{
                  font-weight:500;
@@ -318,12 +340,17 @@ progress::-webkit-progress-value {
                 border-bottom: 1px solid #dee2e6 !important;
     } */
    
+.footer{ 
+height: 300vh;
+width: 100%;
+ }
+
 
 @media only screen and (max-width: 570px) {
 
 .section {  
      margin-left: 60px!important;
-}
+} 
 
 .checkout-div{
             position: absolute;
@@ -333,5 +360,11 @@ progress::-webkit-progress-value {
 .product-main-div{            
              padding-left: 59px!important;
 }
-  
+.promocode-div{
+      /*  width: 104% !important; */
+       margin-left: 3px!important;
+}
+.checkout-btn{
+margin-right: 50px!important;
+}
 }
