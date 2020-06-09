@@ -264,7 +264,18 @@ progress::-webkit-progress-value {
               color:#dc3545;
               transition: 0.5s;
 }
+.trash-icon{
+                fill: var(--blue-color);
+                height: 26px;
+                width: 30px;
+                margin-bottom: 2px;
 
+}
+.trash-icon:hover{
+                fill: red;
+
+
+}
 .qnty-btn{
             background-color: #dee2e6 !important;  
             padding: 5px!important;
@@ -326,12 +337,18 @@ progress::-webkit-progress-value {
    background-color: var(--blue-color)!important;
    color:var(--white-color)!important;
 }
+.checkout-link{
+        text-decoration: none !important;
+        color: var(--white-color)!important;
+
+}
 .promocode-div{
     width: 96% !important;
     margin-left: 10px!important;
 }
 .promocode-input{
   padding: 0px 6px !important;
+  border: none !important;
 }
 
 /*  .font-weight{
