@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="my-cart.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Cart_Shopping      </title>
+  </head>
+  <body>
+    <!-- <div class="container-fluid fixed-top header"> -->
+    <div class="strip fixed-top"></div>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light ">      
+      <div class="parent">        
+        <div class="float-left pl-5" >
+           <ul class="menu">
+            <li class="menu">
+              <a class=" logo menu" href="#">Learnweel</a>
+           </li>
+          </ul>
+          </div> <!--.left-->
+          <!-- Toggler Button     -->
+          <div class="togbtn">
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <!-- .togbtn  -->
+          <!--.Right-->
+          <div class=" float-right collapse navbar-collapse"  id="navbarSupportedContent" >            
+            <ul class="menu navbar-nav mr-auto  mt-2 mt-lg-0  ">
+              <li class="menu" >
+                <a href="#" class=" menu">
+                  Store
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#"  class="menu">
+                  About Us
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#" class="menu">
+                  SignUp
+                </a>
+              </li>
+              <li class="menu ">
+                <a href="#"  class="nav-btn">
+                  <button type="button" class="login-btn ">
+                  Login
+                  </button>
+                </a>
+              </li>            
+          </ul>            
+            </div><!--.collapse-->            
+            </div><!-- .parent-->            
+            </nav><!--.nav-->
+
+           
+    <!-- ============================= navbar end here======================================-->
+            
+    <!--==============================Progress Bar==========================================-->
+            
+            <div class=" container section">              
+                <div class="form-progress">
+
+                <!-- on click submit button  vaule of attribute in progress tag first goes to 33 then 66 and at final 99
+                this makes the progress bar green from one dot to another   -->
+
+<progress class="form-progress-bar" min="0" max="100" value="33" step="33" aria-labelledby="form-progress-completion"></progress>
+
+  <div class="form-progress-indicator one active"><span class="progress-value">Cart</span></div>
+  <div class="form-progress-indicator two  "><span class="progress-value">Billing </span></div>
+  <div class="form-progress-indicator three "><span class="progress-value">Payment</span></div>
+  <div class="form-progress-indicator four  "><span class="progress-value">Succesful</span></div>
+              
+              <!-- <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p> -->
+             </div>
+       </div>
+
+
+
+
+
+ <!--===================================Main-Division===========================================-->
+
+<div class="container main-div float-none">
+
+ <!--===================================Left-Division===========================================-->
+
+
+            <div class="float-lef w-75 pl-1 pt-4 ">
+              <!-- <span> Cart </span> -->
+
+
+
+              <div class="container  product-main-div position-absolute">
+                    <div class="float-left ">
+                      <img src="img/book1.png" alt="" class="product-img mr-2">
+                      <div class="product-price-box  pl-3"> ₹00.0 </div>
+                    </div><!-- .float-left -->
+
+                     
+                      <div class="font-weight-bold ">Harry Potter and Fantastic Beasts <span class="smmry-font grey-color">by J. K. Rowling. </span>
+                      </div >
+
+                   
+                    <div class="smmry-font grey-color"> <span>In Stock </span> </div>
+
+                    <div class="">  <span><button class=" btn qnty-btn " >Qty: 1</button>   </span> <span class="smmry-font  delete-btn"> Delete </span>
+                    </div>                                  
+              </div> <!-- .container-->
+
+ <!--======================================= .Second-product=======================================-->
+       <div class="container second-product  product-main-div position-absolute">
+                    <div class="float-left ">
+                      <img src="img/book3.jpg" alt="" class="product-img mr-2" >
+                      <div class="product-price-box  pl-3"> ₹00.0 </div>
+                    </div><!-- .float-left -->
+
+                     
+                      <div class="font-weight-bold "> Harry Potter and the Philosopher's Stone
+                      <span class="smmry-font grey-color">by Dan Johnson </span>
+                      </div >
+
+                   
+                    <div class="smmry-font grey-color"> <span>In Stock </span> </div>
+
+                    <!--<div class="">  <span><button style="height:200px;width:200px" class=" btn qnty-btn " ><input type="number" min="1" max="10" value="1"></button>-->
+					<div class="">  <span class="qnty-btn">
+					<form action="checkout_cart.html">
+					  <label for="qty"></label>
+					  <select name="qty" id="qty">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					  </select>
+					</form>
+                      </span> <span class="smmry-font  delete-btn"> Delete </span>
+                      <div class="discount­code­field"> 
+                      </div> 
+                    </div>               
+        </div> <!-- .container-->
+
+ <!--======================================= .third-product=======================================-->
+
+
+
+
+        <!-- <div class="container third-product  product-main-div position-absolute">
+                    <div class="float-left ">
+                                <img src="img/book2.jpg" alt="" class="product-img mr-2">
+                                <div class="product-price-box  pl-3"> ₹00.0 </div>
+                     </div>
+                     
+                      <div class="font-weight-bold ">The Alchemist <span class="smmry-font grey-color">by Paulo Coelho </span>
+                      </div >
+                   
+                    <div class="smmry-font grey-color"> <span>In Stock </span> </div>
+                    <div class="">  <span><button class=" btn qnty-btn " >Qty: 1</button>   </span> <span class="smmry-font  delete-btn"> Delete </span></div>  
+      </div>  --><!-- .container-->
+    
+                    
+                    </div><!-- .Main-Float-Left -->
+
+
+<!---================================Right-Division========================================================--->
+
+
+    <div class="float-Right pl-5 ml-5">
+              
+              <div class="container float-right smry-main-div  ">
+                <div class="checkout-smmry">Summary (2)</div>
+
+                <div>
+                  <span class=" smmry-font">Subtotal</span>
+                  <span class="float-right smmry-font"> ₹00.0 </span>
+                </div>
+                <div>
+                  <span class=" smmry-font">Discount</span>
+                  <span class="float-right smmry-font"> ₹00.0 </span>
+                </div>
+                <div>
+                  <span class=" smmry-font">Delivery</span>
+                  <span class="float-right smmry-font"> ₹00.0 </span>
+                </div>
+                <div class=" border-total">
+                  <span class="font-weight-bold smmry-font font-size">Total</span>
+                  <span class="float-right smmry-font font-size"> ₹00.0</span>
+                </div>
+                        <input autocomplete="off" type="text" class="input-group-text-box btn" name="discount" placeholder="Enter promocode here" /> 
+						
+                        <input type="submit" class="input-group-text-submit btn" value="Submit">
+                
+                      
+                    
+              
+				
+                <a type="submit" class="input-group-text btn" href="file:///C:/xampp/htdocs/cart/guest.html">Guest Checkout</a>
+                <a type="submit" class="input-group-text btn" href="file:///C:/xampp/htdocs/cart/member.html">Member Checkout</a>
+               
+              </div>
+              
+              
+     </div><!-- .Main Float-Right -->
+</div><!-- .container-Main-Div -->
+
+
+
+
+
+<!---================================Script-part==================================================================--->
+
+
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                    </body>
+                  </html>
