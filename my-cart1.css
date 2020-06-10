@@ -163,14 +163,14 @@ progress::-webkit-progress-value {
   left: 0;
 }
 .form-progress-indicator.two {
-  left: 33%;
+  left:50%;
 }
 .form-progress-indicator.three {
-  left: 66%;
-}
-.form-progress-indicator.four {
   left: 100%;
 }
+/* .form-progress-indicator.four {
+  left: 100%;
+} */
 .form-progress-indicator.active {
   animation: bounce 0.5s forwards;
   animation-delay: 0.5s;
