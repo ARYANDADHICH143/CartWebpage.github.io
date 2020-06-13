@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link href="my-cart1.css" rel="stylesheet">
+    <link href="checkpage.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <title>Cart_Shopping      </title>
@@ -74,9 +74,9 @@
 
 <progress class="form-progress-bar" min="0" max="100" value="50" step="99" aria-labelledby="form-progress-completion"></progress>
 
-  <div class="form-progress-indicator one active"><span class="progress-value">Cart</span></div>
-  <div class="form-progress-indicator two active "><span class="progress-value">Billing </span></div>
-  <div class="form-progress-indicator three "><span class="progress-value">Payment</span></div>
+  <div class="form-progress-indicator one active"><span class="progress-value"><a  href="./index.html">Cart</a></span></div>
+  <div class="form-progress-indicator two active "><span class="progress-value"><a href="./guest.html">Billing </a> </span></div>
+  <div class="form-progress-indicator three "><span class="progress-value"><a href="#"> Payment</a></span></div>
 <!--   <div class="form-progress-indicator four  "><span class="progress-value">Succesful</span></div> -->
               
               <!-- <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p> -->
@@ -91,32 +91,60 @@
 
  <!--===================================Main-Division===========================================-->
 
-<div class="container main-div-form float-none">
+<div class="container main-div-form float-none ">
+   <div class="main-user-border container-fluid mb-3 pb-2 text-center">
+      user details - for shopping address
+    </div>
 
- <!--===================================Left-Division===========================================-->
+                <div class="float-left w-50">
+                  <div class="main-user-border container-fluid mb-3 pb-2 text-center">
+     For Billing Address
+    </div>
+                        <form>
 
-<form action="/action_page.php">
-  <div class="container">
-    <h1>shipping address</h1>
-	<p>basic info for billing purpose</p>
-    <hr>
-	<label for="firstname"><b>firstname</b></label>
-    <input type="text" placeholder="firstname" name="firstname" >
-	<br>
-	<label for="lastname"><b>lastname</b></label>
-    <input type="text" placeholder="lastname" name="lastname" >
-	<br>
-    <label for="address"><b>address</b></label>
-    <input type="address" placeholder="enter your address" name="address" id="address">
-	<br>
-    <label for="city"><b>city</b></label>
-    <input type="city" placeholder="city of residence" name="city" id="city">
-	<br>
-	<fieldset>
-				<label for="city"><b>state</b></label>
-                  <label class="state"> 
-                  <select class="select-style" name="state">
-                  <option value="">state</option>
+                  <div class="form-group row">
+
+                      <label for="inputFirstname" class="col-sm-3 col-form-label">First name</label>
+                          <div class="col-sm-6">
+                            <input type="firstname" class="form-control" id="inputFirstname" placeholder="First name">
+                          </div>
+                  </div>
+
+                   <div class="form-group row">
+
+                      <label for="inputLastname" class="col-sm-3 col-form-label">Last name</label>
+                          <div class="col-sm-6">
+                            <input type="lastname" class="form-control" id="inputLastname" placeholder="Last name">
+                          </div>
+                  </div>
+
+
+                  <div class="form-group row">
+                        <label for="address" class="col-sm-3 col-form-label">address</label>
+                        <div class="col-sm-6">
+                        <textarea class="form-control" id="address" rows="2"  placeholder="address of residence"></textarea>
+                        </div>
+                  </div>
+                   <div class="form-group row">
+                          <label for="inputAddress2" class="col-sm-3 col-form-label">Address 2</label>
+                          <div class="col-sm-6">
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio">
+                        </div>
+                  </div
+                  >
+                  <div class="form-group row">
+                    <label for="City" class="col-sm-3 col-form-label">City</label>
+                        <div class="col-sm-6">
+                          <input type="city" name="city" class="form-control" id="City" placeholder="City of residence">
+                        </div>
+                </div>
+     
+                 <div class="form-group row">
+                          <label for="SelectState" class="col-sm-3 col-form-label">Select State</label>
+                           <div class="col-sm-6">
+                          <select class="form-control" id="SelectState">
+                          
+                             <option selected>Choose...</option>
                   <option  value="01">Andhra Pradesh</option>
                   <option value="02">Arunachal Pradesh </option>
                   <option value="03">Assam</option>
@@ -129,7 +157,7 @@
                   <option value="10">Jharkhand</option>
                   <option value="11">Karnataka</option>
                   <option value="12">Kerala</option>
-				  <option  value="13">Madhya Pradesh</option>
+                  <option  value="13">Madhya Pradesh</option>
                   <option value="14">Maharashtra</option>
                   <option value="15">Manipur</option>
                   <option value="16">Meghalaya</option>
@@ -141,35 +169,97 @@
                   <option value="22">Sikkim</option>
                   <option value="23">Tamil Nadu</option>
                   <option value="24">Telangana</option>
-				  <option value="25">Tripura</option>
+                  <option value="25">Tripura</option>
                   <option value="26">Uttarakhand</option>
                   <option value="27">Uttar Pradesh</option>
                   <option value="28">West Bengal</option>
-                  </label>
-                 </select> 
-			</fieldset>
-	<label for="pincode"><b>pincode</b></label>
-    <input type="pincode" placeholder="pincode" name="pincode" id="pincode">
-	<br>
-	<label>
-	<hr>is billing address and shipping address same:
-    <input text= "is billing address and shipping address same:" type="checkbox" name="yes">yes
-	<input text= "is billing address and shipping address same:" type="checkbox" name="no">no
-  </label>
-    <hr>
-	<!-- there there need to be a is script to open the form only if user clicks no button, So below form will only open if checkbox is 'no' -->
-	<p>kindly fill this form for delivaring your book to your shipping address</p>
-    <label for="address"><b>address</b></label>
-    <input type="address" placeholder="enter your address" name="address" id="address">
-	<br>
-    <label for="city"><b>city</b></label>
-    <input type="city" placeholder="city of residence" name="city" id="city">
-	<br>
-	     <fieldset>
-				<label for="city"><b>state</b></label>
-                  <label class="state"> 
-                  <select class="select-style" name="state">
-                  <option value="">state</option>
+                          </select>
+                            </div>
+                 </div>
+
+                 <div class="form-group row">
+                        <label for="inputZip"  class="col-sm-3 col-form-label" >Zip</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                </div>
+
+ <div class="form-group row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="ShipppingCheck">
+            <label class="form-check-label" for="ShipppingCheck">
+             is billing address and shipping address is same ?
+            </label>
+          </div>
+        </div>
+      </div>
+
+ <div class="form-group row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="termsandconditions" required >
+            <label class="form-check-label" for="termsandconditions">
+               Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group row">
+        <div class="col-sm-2">
+          
+        </div>
+        <div class="col-sm-8">
+          <button type="submit" class="btn btn-primary input-group-text-form" >Proceed to payment</button>
+        </div>
+      </div>
+                      </form>
+
+                </div><!-- /.float-left-div -->
+
+
+
+
+
+<!-- ===========================================Float-Right/.div=========================================================== -->
+
+
+ <div  class="float-right w-50">
+              <div class="main-user-border container-fluid mb-3 pb-2 text-center">
+                 for  shipping address
+                </div>
+             <form>
+                   <div class="form-group row">
+                        <label for="address" class="col-sm-3 col-form-label">address</label>
+                        <div class="col-sm-6">
+                        <textarea class="form-control" id="address" rows="2"  placeholder="address of residence"></textarea>
+                        </div>
+                  </div>
+                   <div class="form-group row">
+                          <label for="inputAddress2" class="col-sm-3 col-form-label">Address 2</label>
+                          <div class="col-sm-6">
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio">
+                        </div>
+                  </div
+                  >
+                  <div class="form-group row">
+                    <label for="City" class="col-sm-3 col-form-label">City</label>
+                        <div class="col-sm-6">
+                          <input type="city" name="city" class="form-control" id="City" placeholder="City of residence">
+                        </div>
+                </div>
+     
+                 <div class="form-group row">
+                          <label for="SelectState" class="col-sm-3 col-form-label">Select State</label>
+                           <div class="col-sm-6">
+                          <select class="form-control" id="SelectState">
+                          
+                             <option selected>Choose...</option>
                   <option  value="01">Andhra Pradesh</option>
                   <option value="02">Arunachal Pradesh </option>
                   <option value="03">Assam</option>
@@ -182,7 +272,7 @@
                   <option value="10">Jharkhand</option>
                   <option value="11">Karnataka</option>
                   <option value="12">Kerala</option>
-				  <option  value="13">Madhya Pradesh</option>
+                  <option  value="13">Madhya Pradesh</option>
                   <option value="14">Maharashtra</option>
                   <option value="15">Manipur</option>
                   <option value="16">Meghalaya</option>
@@ -194,22 +284,29 @@
                   <option value="22">Sikkim</option>
                   <option value="23">Tamil Nadu</option>
                   <option value="24">Telangana</option>
-				  <option value="25">Tripura</option>
+                  <option value="25">Tripura</option>
                   <option value="26">Uttarakhand</option>
                   <option value="27">Uttar Pradesh</option>
                   <option value="28">West Bengal</option>
-                  </label>
-                 </select> 
-			</fieldset>
-	<label for="pincode"><b>pincode</b></label>
-    <input type="pincode" placeholder="pincode" name="pincode" id="pincode">
-	<br>
-	<hr>
-	<label>
- 
- </div>
-</form>
-<button type="submit" position="center" class="input-group-text-form btn">Proceed to payment</button>
+                          </select>
+                            </div>
+                 </div>
+
+                 <div class="form-group row">
+                        <label for="inputZip"  class="col-sm-3 col-form-label" >Zip</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                </div>
+             </form>   
+                                 
+
+</div><!-- /.float-right-div -->
+
+
+
+</div>
+
 <!---================================Footer==================================================================--->
 <div class="footer container-fluid">
   
@@ -221,9 +318,9 @@
 
 <!---================================Script-part==================================================================--->
 
-
+<!-- 
                       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
                     </body>
                   </html>
