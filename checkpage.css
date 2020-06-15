@@ -205,15 +205,16 @@ progress::-webkit-progress-value {
 /*======================================================main-div-start============================================================== */
 .shipping-div{
         width: 55%  !important;
-        height: 111vh;
+        /* height: 145vh; */
         margin-top: 100px;
-        border: 1px solid #dee2e6 !important;
+        /* border: 1px solid #dee2e6 !important; */
         padding: 0px!important;
         box-sizing: border-box;
         margin-left: 50px!important;
 
 }
 .Section-header{
+    width: 90%!important;
     border-bottom: 1px solid #dee2e6;
     text-transform: capitalize;
     color: #fff;
@@ -234,6 +235,7 @@ progress::-webkit-progress-value {
     /* padding: 8px 20px 20px 20px; */
 }
 .shipping-form{
+     width: 90%!important;
      border: 15px solid #dee2e6;
      padding-top: 20px;
 }
@@ -260,7 +262,187 @@ progress::-webkit-progress-value {
 height: 300vh;
 width: 100%;
  }
+ /*======================================================top-bar style start============================================================== */
 
+
+.main-div{
+        position: absolute;
+        padding-top:50px;
+        box-sizing:border-box;
+}
+
+.product-main-div{   
+              width: 355px!important;        
+             max-width: 700px!important;
+             border-bottom: 1px solid #dee2e6 !important;
+             font-weight:500;
+             padding-bottom:11px;
+             margin-top: 20px;
+}
+.product-img{
+            height: 150px;
+            
+}
+.product-price-box{
+              background-color: var(--blue-color)/* #00a4d0 */;
+              color:var(--white-color)!important;
+              font-size: 16px;
+              font-weight: 600;
+              width: 95px;
+              position: relative;
+              top: 2px;
+              left: 2px;
+}
+.smmry-font{
+              font-size:14px;
+              font-style: Helvetica;
+              font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+              line-height: 24px;
+              font-weight: 500;
+}
+.grey-color{
+              color:rgb(141, 141, 141) ;
+
+}
+.delete-btn{
+              font-size:15px ;
+              text-decoration: underline;
+              border-left: 1px solid #dee2e6 !important;
+              border-right: 1px solid #dee2e6 !important;
+              padding: 0px 10px 0px 10px;
+}
+.delete-btn:hover{
+              font-size: 16px;
+              color:#dc3545;
+              transition: 0.5s;
+}
+.trash-icon{
+                fill: var(--blue-color);
+                height: 26px;
+                width: 30px;
+                margin-bottom: 2px;
+
+}
+.trash-icon:hover{
+                fill: red;
+
+
+}
+.qnty-btn{
+            background-color: #dee2e6 !important;  
+            padding: 5px!important;
+            font-size: 16px!important;
+
+}
+.qnty-select{
+  border: 0px;
+  background-color: #dee2;
+
+}
+
+.second-product{
+    top: 680px;
+    /* left: 0px; */
+}
+.third-product{
+      top: 500px
+
+}
+.cart-product-conatiner{
+                  border: 15px solid #dee2e6;
+                  height: 80vh;
+                  padding: 0px!important;
+}
+/* =======================================--Main-Div-Right---========================================================================= */
+
+.smmry-main-div{
+              min-width: 400px!important;
+              top: -90px
+}
+.smmry-header{
+   /*  width: 90%!important; */
+    /* border-bottom: 1px solid #dee2e6; */
+    text-transform: capitalize;
+    color: #333;
+    background-color: #dee2e6;
+    padding: 15px 20px!important;
+    box-sizing: border-box;
+}
+.section-smmry-text{
+
+    font-size: 26px;
+    font-family: "TradeGothicW01-BoldCn20 675334", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    padding-top: 15px;
+    box-sizing: border-box;
+    /* padding: 8px 20px 20px 20px; */
+}
+.smmry-form{
+     /* width: 90%!important; */
+     border: 15px solid #dee2e6;
+     padding-top: 20px;
+     margin-bottom: 25px;
+
+}
+.checkout-smmry{
+             border-bottom: 1px solid #dee2e6 !important;
+             font-weight:500;
+             padding-bottom:5px;
+}
+.color-green {
+              color: var(--success);
+              font-size:22px;
+
+}
+.border-total{
+              border-top: 1px solid #dee2e6!important;
+              border-bottom: 1px solid #dee2e6!important;
+              padding: 5px 0px 5px 0px;
+              margin: 5px;
+}
+.font-size{
+          font-size:18px;
+
+}
+.btn-checkout {
+            width: 300px;
+            background-color: var(--blue-color)!important;
+            border: 0!important;
+            color: #fff !important;
+            padding: 10px 80px !important;
+            border-radius:10px !important;
+            box-shadow: none;
+            margin-left: 35px;
+            margin-top: 15px;
+
+}
+
+.btn-color{
+   background-color: var(--blue-color)!important;
+   color:var(--white-color)!important;
+}
+.checkout-link{
+        text-decoration: none !important;
+        color: var(--white-color)!important;
+
+}
+.promocode-div{
+    width: 96% !important;
+    margin-left: 10px!important;
+}
+.promocode-input{
+  padding: 0px 6px !important;
+  border: none !important;
+}
+.promo-section-hide{
+  display: none!important ;
+}
+.promocode-checkbtn{
+  display: none !important;
+}
 
 @media only screen and (max-width: 570px) {
 
@@ -269,9 +451,22 @@ width: 100%;
         margin-left: 25px!important;
         height: 177vh;
 }
-
+.Section-header {
+    width: 115%!important
+    }
+.shipping-form{
+  width: 115%!important;
+}
 .form-control{
 
     width: 80%!important;
     }
+
+.smmry-main-div{
+  position: relative!important;
+    top: 10px!important;
+    left: 140px!important;
+
+
+}
 }
