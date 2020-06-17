@@ -202,17 +202,67 @@ progress::-webkit-progress-value {
   }
 }
 
+/*======================================================main-div-start============================================================== */
+.shipping-div{
+        width: 55%  !important;
+        /* height: 145vh; */
+        margin-top: 100px;
+        /* border: 1px solid #dee2e6 !important; */
+        padding: 0px!important;
+        box-sizing: border-box;
+        margin-left: 50px!important;
 
+}
+.Section-header{
+    width: 90%!important;
+    border-bottom: 1px solid #dee2e6;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: var(--blue-color);
+    padding: 15px 20px!important;
+    box-sizing: border-box;
+}
+.section-shipping-text{
 
+    font-size: 26px;
+    font-family: "TradeGothicW01-BoldCn20 675334", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-top: 15px;
+    box-sizing: border-box;
+    /* padding: 8px 20px 20px 20px; */
+}
+.shipping-form{
+     width: 90%!important;
+     border: 15px solid #dee2e6;
+     padding-top: 20px;
+}
+.shipping-label-font{
+           font-size: 20px!important;
+          line-height: 17px!important;
+          font-weight: 700!important;
+          color: #333333!important;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+.form-control{
 
-
-
-
-
-
-
-
-/*======================================================top-bar style start============================================================== */
+    width: 70%!important;   
+    font-size: 22px!important;
+    font-weight: 600!important;
+    line-height: 1.5!important;
+    color: #333333!important;
+    border: 1px solid !important ;
+    border-radius: 0px!important;
+    text-transform: capitalize!important;
+   
+}
+.footer{ 
+height: 300vh;
+width: 100%;
+ }
+ /*======================================================top-bar style start============================================================== */
 
 
 .main-div{
@@ -221,11 +271,13 @@ progress::-webkit-progress-value {
         box-sizing:border-box;
 }
 
-.product-main-div{            
+.product-main-div{   
+              width: 355px!important;        
              max-width: 700px!important;
              border-bottom: 1px solid #dee2e6 !important;
              font-weight:500;
              padding-bottom:11px;
+             margin-top: 20px;
 }
 .product-img{
             height: 150px;
@@ -289,24 +341,61 @@ progress::-webkit-progress-value {
 }
 
 .second-product{
-      top: 300px;
-
+    top: 680px;
+    /* left: 0px; */
 }
 .third-product{
       top: 500px
 
 }
+.cart-product-conatiner{
+                  border: 15px solid #dee2e6;
+                  height: 80vh;
+                  padding: 0px!important;
+}
+/* =======================================--Main-Div-Right---========================================================================= */
 
+.smmry-main-div{
+              min-width: 400px!important;
+              top: -90px
+}
+.smmry-header{
+   /*  width: 90%!important; */
+    /* border-bottom: 1px solid #dee2e6; */
+    text-transform: capitalize;
+    color: #333;
+    background-color: #dee2e6;
+    padding: 15px 20px!important;
+    box-sizing: border-box;
+}
+.section-smmry-text{
 
-/* =======================================--Main-Div-Right---=============================== */
+    font-size: 26px;
+    font-family: "TradeGothicW01-BoldCn20 675334", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    padding-top: 15px;
+    box-sizing: border-box;
+    /* padding: 8px 20px 20px 20px; */
+}
+.smmry-form{
+     /* width: 90%!important; */
+     border: 15px solid #dee2e6;
+     padding-top: 20px;
+     margin-bottom: 25px;
 
-.smry-main-div{
-              max-width: 400px!important;
 }
 .checkout-smmry{
              border-bottom: 1px solid #dee2e6 !important;
              font-weight:500;
              padding-bottom:5px;
+}
+.color-green {
+              color: var(--success);
+              font-size:22px;
+
 }
 .border-total{
               border-top: 1px solid #dee2e6!important;
@@ -330,9 +419,7 @@ progress::-webkit-progress-value {
             margin-top: 15px;
 
 }
-.checkout-btn{
 
-}
 .btn-color{
    background-color: var(--blue-color)!important;
    color:var(--white-color)!important;
@@ -356,37 +443,30 @@ progress::-webkit-progress-value {
 .promocode-checkbtn{
   display: none !important;
 }
-/*  .font-weight{
-                 font-weight:500;
-                 padding-bottom:5px;
-                border-bottom: 1px solid #dee2e6 !important;
-    } */
-   
-.footer{ 
-height: 300vh;
-width: 100%;
- }
-
 
 @media only screen and (max-width: 570px) {
 
-.section {  
-     margin-left: 60px!important;
-} 
+.shipping-div{
+        width: 100% !important;
+        margin-left: 25px!important;
+        height: 177vh;
+}
+.Section-header {
+    width: 115%!important
+    }
+.shipping-form{
+  width: 115%!important;
+}
+.form-control{
 
-.checkout-div{
-            position: absolute;
-            top: 630px;
-            right: -80px;
-          }
-.product-main-div{            
-             padding-left: 59px!important;
-}
-.promocode-div{
-      /*  width: 104% !important; */
-       margin-left: 3px!important;
-}
-.checkout-btn{
-margin-right: 50px!important;
+    width: 80%!important;
+    }
+
+.smmry-main-div{
+  position: relative!important;
+    top: 10px!important;
+    left: 140px!important;
+
+
 }
 }
